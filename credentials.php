@@ -1,5 +1,18 @@
 <?php
 
-$set_user = "leo";
-$set_pass = "123";
-$set_user_type = "adm";
+function getCredentials() {
+    return [
+        'admin' => [
+            'pass' => 'admin123',
+            'type' => 'administrador',
+        ],
+        'cliente' => [
+            'pass' => 'cliente123',
+            'type' => 'cliente',
+        ],
+        'suporte' => [
+            'pass' => 'suporte123',
+            'type' => 'suporte',
+        ],
+    ];
+}
